@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.overlay {
+  background-color: black;
+  z-index: 1;
+  height: 0%;
+  width:100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+  transition:0.5s;
+  overflow-x: hidden;
+}
+
+.overlay-content {
+  width: 25%;
+  display:block;
+  position: relative;
+  top:25%;
+  left: 35%;
+  text-align:center;
+  margin-top:30px;
+  color:green;
+  
+}
+.close-icon{
+  color:green;
+  position: relative;
+  top:25%;
+  left:60%;
+}

@@ -1,0 +1,31 @@
+*{box-sizing: border-box;}
+#tabs{
+  float: left;
+  height: 300px;
+  width: 175px;
+  border: 1px solid #ccc;
+  background-color:#f1f1f1;
+  margin-right: 20px;
+
+}
+#tabs button{
+  display: block;
+  width: 175px;
+  border: none;
+  transition: 0.3s;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+}
+#tabs button:hover, button.active {
+  background-color:gray
+}
+
+.tab-content{
+  display: none;
+  text-align: center;
+  padding:50px
+
+
+}
+

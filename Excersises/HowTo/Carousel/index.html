@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- underscore -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore.js"
+      integrity="sha512-qbJl2/KyecDVJdgAwr0Gzhm5KBmkzdUouG+sKmCWP1Idb144ZnfSmCRReuYXPEHIa4j38TwrR2ySeGoFH5gKzA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!----Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="carousel">
+      <div class="carousel-image active">
+        <div class="number">1/4</div>
+        <img
+          src="https://cdn.vox-cdn.com/thumbor/erBglLkGU0eWF6c2PsEWHT2_TE0=/12x0:4907x3263/1400x1400/filters:focal(12x0:4907x3263):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/49388585/16071828377_85109fdee4_o.0.0.jpg"
+          alt="staring"
+        />
+        <div class="text">Caption One</div>
+      </div>
+      <div class="carousel-image">
+        <div class="number">2/4</div>
+        <img
+          src="https://www.sixsenses.com/media/6598/qing-cheng-mountain-china-010_panda-ark-a.jpg?crop=0,0.038960539719760066,0.39093317861474297,0&cropmode=percentage&width=790&height=987&rnd=132266539900000000"
+          alt="hissing"
+        />
+        <div class="text">Caption Two</div>
+      </div>
+      <div class="carousel-image">
+        <div class="number">3/4</div>
+        <img
+          src="https://i.natgeofe.com/k/63b1a8a7-0081-493e-8b53-81d01261ab5d/red-panda-full-body_16x9.jpg?w=1200"
+          alt="aggressive"
+        />
+        <div class="text">Caption Three</div>
+      </div>
+      <div class="carousel-image">
+        <div class="number">4/4</div>
+        <img
+          src="http://1.bp.blogspot.com/-2WMe74-hYSs/UkXEKuUSIrI/AAAAAAAAJsY/7IrfOQVWmKQ/s1600/DSC_0047.JPG"
+          alt="playing"
+        />
+        <div class="text">Caption Four</div>
+      </div>
+      <div id="left-arrow" onclick="plusSlides(-1)">&lt;</div>
+      <div id="right-arrow" onclick="plusSlides(1)">&gt;</div>
+    </div>
+    <div class="dot-container">
+      <div class="dot selected"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>

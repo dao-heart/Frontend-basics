@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Javascript insertBefore()</title>
+
+
+    </title>
+
+
+</head>
+
+<body>
+    <ul id="menu">
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+
+
+
+    <script>
+        let ul = document.getElementById("menu")
+        let li = document.createElement('li')
+        li.textContent = "Home"
+        ul.insertBefore(li, ul.firstElementChild)
+        
+    </script>
+
+</body>
+
+
+
+</html>
+
+

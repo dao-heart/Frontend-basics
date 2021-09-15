@@ -1,0 +1,10 @@
+#comments {
+  margin: 3rem;
+}
+input {
+  width: 70%;
+  margin: 1rem 0.5rem 1rem 0.5rem;
+}
+.comment-item input {
+  width: 100%;
+}

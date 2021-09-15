@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Javascript append()</title>
+
+
+    </title>
+
+
+</head>
+
+<body>
+    <ul id="menu">
+        <li>JavaScript</li>
+    </ul>
+    <div id="app"></div>
+
+
+
+    <script>
+        // Inserts set of nodes or dom string after first child of parent node.
+        let ul = document.getElementById("menu")
+        let lans = ['TypeScript','HTML','CSS'];
+        let nodes = lans.map(lan => {
+            let li = document.createElement("li");
+            li.textContent = lan
+            return li
+        })
+        ul.prepend(...nodes)
+        // Using append to append text to the example
+        let app = document.querySelector('#app')
+        app.prepend('append() Text Demo');
+        console.log(app.textContent)
+        
+        
+    </script>
+
+</body>
+
+
+
+</html>
+
+

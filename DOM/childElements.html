@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Get Child Elements</title>
+</head>
+<body>
+  <ul id="menu">
+    <li class="first">Home</li>
+    <li>Products</li>
+    <li class="current">Customer Support</li>
+    <li>Careers</li>
+    <li>Investors</li>
+    <li>News</li>
+    <li class="last">About Us</li>
+  </ul>
+</body>
+</html>
+
+
+<script>
+'use strict'
+
+let parentNode = document.getElementById("menu")
+
+let firstChild = parentNode.firstChild.nodeName
+
+console.log(firstChild) // #text -> Spaces are represented using text
+
+let firstElementChild = parentNode.firstElementChild
+
+console.log(firstElementChild) // <li class="first">Home</li>
+// Similarly last child
+
+// All children
+
+let children = parentNode.children;
+console.log(children) // All children - Elements
+
+</script>
+
+

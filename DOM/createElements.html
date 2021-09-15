@@ -1,0 +1,50 @@
+<!-- document,createElement(htmlTag) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS CreateElement Demo</title>
+</head>
+<body>
+
+    <ul id = "menu">
+        <li>
+            Home
+        </li>
+
+
+    </ul>
+
+
+</body>
+
+<script>
+'use strict'
+let div = document.createElement('div');
+// Adding an Id to div
+div.id ="content";
+// Adding an class to div
+div.className ="note";
+// Adding text content
+let h2 = document.createElement('h2')
+h2.textContent = 'Add h2 element to the div';
+div.appendChild(h2)
+// Adding text
+div.text = document.createTextNode("Create Element using text node");
+// div.innerHTML = '<p> Created Element</p';
+
+// Adding new li to the list
+let ul = document.getElementById("menu")
+let children = ul.children
+let li = document.createElement('li')
+li.textContent= 'About us'
+console.log(children)
+ul.append(li)
+document.body.appendChild(div)
+// Can also append script and load js files dynamically.
+</script>
+</html>
+
+
+
+

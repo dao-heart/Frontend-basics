@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Javascript append()</title>
+
+
+    </title>
+
+
+</head>
+
+<body>
+    <ul id="app">
+        <li>JavaScript</li>
+    </ul>
+
+
+
+    <script>
+        // Inserts set of nodes or dom string after last child of parent node.
+        let ul = document.getElementById("app")
+        let lans = ['TypeScript','HTML','CSS'];
+        let nodes = lans.map(lan => {
+            let li = document.createElement("li");
+            li.textContent = lan
+            return li
+        })
+        ul.append(...nodes)
+        // Using append to append text to the example
+        let app = document.querySelector('#app')
+        app.append('append() Text Demo');
+        console.log(app.textContent)
+        
+        
+    </script>
+
+</body>
+
+
+
+</html>
+
+

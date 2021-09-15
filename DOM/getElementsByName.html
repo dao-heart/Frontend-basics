@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta cahrset="utf-8">
+    <title>Get Element By Name method</title>
+
+</head>
+
+<body>
+
+<p>Please rate the services:</p>
+<p>
+<input type="radio" name="rate" value="Very poor"> Very poor
+<input type="radio" name="rate" value="Poor"> Poor
+<input type="radio" name="rate" value="OK"> OK
+<input type="radio" name="rate" value="Good"> Good
+<input type="radio" name="rate" value="Very Good"> Very Good
+</p>
+
+<button id="btnRate">Submit</button>
+
+</body>
+
+<script>
+"use strict"
+
+let btn = document.getElementById("btnRate");
+btn.addEventListener('click', ()=>{
+    let rates = document.getElementsByName('rate')
+    rates.forEach((rate)=>{
+        if (rate.checked){
+            console.log(`You rated: ${rate.value}`)
+        }
+    })
+})
+
+// return null if id doesn't exist otherwise returns a list of live elements.
+// Any changes are auto updated 
+
+
+
+
+
+</script>
+
+
+</html>

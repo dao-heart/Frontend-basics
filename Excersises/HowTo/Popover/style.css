@@ -1,0 +1,38 @@
+*{box-sizing:border-box;}
+
+.container{
+    position: relative;
+}
+button{
+    height:40px;
+    width:75px
+
+}
+
+.popover-content{
+    position: absolute;
+    top:40px;
+    text-align: center;
+    left:-20px;
+    overflow:hidden;
+    display: none;
+
+
+}
+
+.popover-content p{
+    margin-top: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    
+    padding: 5px;
+}
+.popover-content:before{
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  margin-bottom: -10px;
+  border-color:  transparent transparent #555 transparent;
+
+}

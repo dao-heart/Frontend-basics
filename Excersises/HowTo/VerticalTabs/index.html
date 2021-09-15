@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- underscore -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore.js"
+      integrity="sha512-qbJl2/KyecDVJdgAwr0Gzhm5KBmkzdUouG+sKmCWP1Idb144ZnfSmCRReuYXPEHIa4j38TwrR2ySeGoFH5gKzA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!----Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="tabs">
+      <button onclick="openCity(event, 'London')" class="tab active">
+        London
+      </button>
+      <button onclick="openCity(event, 'Paris')" class="tab">Paris</button>
+      <button onclick="openCity(event, 'Tokyo')" class="tab">Tokyo</button>
+    </div>
+
+    <div id="content">
+      <div id="London" class="tab-content">
+        <h2>London</h2>
+        <p>You are in London</p>
+      </div>
+      <div id="Paris" class="tab-content">
+        <h2>Paris</h2>
+        <p>You are in Paris</p>
+      </div>
+      <div id="Tokyo" class="tab-content">
+        <h2>Tokyo</h2>
+        <p>You are in Tokyo</p>
+      </div>
+    </div>
+
+    <script defer type="text/javascript" src="index.js"></script>
+  </body>
+</html>

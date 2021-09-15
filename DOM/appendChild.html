@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript appendChild() Demo</title>
+</head>
+<body>
+    <ul id="menu">
+    </ul>
+
+
+    <ul id="menu2">
+    </ul>
+
+    
+    <script>
+
+        let ul = document.getElementById('menu')
+        
+        function createMenuItem(name){
+            let li = document.createElement("li");
+            li.textContent = name;
+            ul.appendChild(li);
+        }
+
+        let menuItems = ["About", "Home", "Services", "Contact US"]
+        menuItems.map(createMenuItem)
+
+        //// Move Items from one item to another
+        const new_ul = document.getElementById('menu2')
+        let transferChild = ul.firstElementChild;
+        new_ul.appendChild(transferChild)
+    </script>
+</body>
+</html>
